@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+  <title>Coldplay</title>
+</head>
+
+<body id="canvas2">
+  <audio id="audio3" autoplay>
+    <source src="viva1.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="yes-container">
+    <div class="text-container">
+      <h2>Te quieres casar conmigo?</h2>
+
+      <p>
+        Empezó Viva la vida, ya no era un simulacro! ¡Todos a sus posiciones! Recuerdo haberte pedido que me acompañaras
+        al pasillo, mientras el ambiente se volvía cada vez más de ensueño. Y de pronto, después de 3 min exactos,
+        sonaron los violines previos, 65 mil personas a punto de saltar, no había otro momento amor, era ese, lo que
+        mereces, solo un poco de todo lo que mereces. “¿Te quieres casar conmigo?”, y al ver tu carita hermosa y tus
+        ojos redonditos mirándome mientras ya medio monterrey estaba temblando del despapaye que se estaba armando,
+        sucedió:
+      </p>
+    </div>
+
+    <div class="image-container">
+      <img src="coldplay2.jpeg" alt="">
+    </div>
+
+    <div class="button-container">
+      <button id="button-play" class="play-button" style="background-color: #000000;border: 0.1rem solid #7A5CCC;"
+        onclick="fireworks()">
+        <span>me diste el si!</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume" width="20" height="20"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="#E440F7" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M15 8a5 5 0 0 1 0 8" />
+          <path d="M17.7 5a9 9 0 0 1 0 14" />
+          <path
+            d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="button-container" style="padding-bottom: 30px;">
+      <button id="button-play" class="play-button play-button-purple"
+        style="margin-right: 10px;background-color: #000000;">
+        <a href="letter.html">anterior</a>
+      </button>
+      <button id="button-play" class="play-button play-button-purple" style="background-color: #000000;">
+        <a href="thanks.html">siguiente</a>
+      </button>
+    </div>
+  </div>
+
+  <canvas class="canvas1" id="canvas1"></canvas>
+
+  <script src="index.js"></script>
+  <script src="canvas.js"></script>
+</body>
+
+</html>

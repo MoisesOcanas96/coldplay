@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+  <title>Coldplay</title>
+</head>
+
+<body>
+  <audio id="audio" autoplay>
+    <source src="adventure.mp3" type="audio/mpeg">
+  </audio>
+  <div class="button-container">
+    <button id="button-play" class="play-button play-button-purple" onclick="play()">
+      <span>picale</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-volume" width="20" height="20"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="#E440F7" fill="none" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M15 8a5 5 0 0 1 0 8" />
+        <path d="M17.7 5a9 9 0 0 1 0 14" />
+        <path
+          d="M6 15h-2a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h2l3.5 -4.5a0.8 .8 0 0 1 1.5 .5v14a0.8 .8 0 0 1 -1.5 .5l-3.5 -4.5" />
+      </svg>
+    </button>
+  </div>
+
+  <img id="spectrum" src="https://gitlab.com/daikra/media/-/raw/main/media/flower_of_life/spectrum.webp">
+  <img id="mask" src="https://gitlab.com/daikra/media/-/raw/main/media/flower_of_life/mask.svg">
+
+  <div id="intro-text" class="intro">
+    <p>
+      Este mes decidí volver a los viejos orígenes, algo hecho por mi. Y como sabes se hacer muy pocas cosas con mis
+      manos jaja. Así que dije, tenemos nuestra pagina de aventuras juntos y aun le falta la que ha tenido más
+      significado hasta ahora, asi que hare una excepcion y quiero darte esta pequeña historia aparte, de lo que
+      significo para mi la mejor noche de mi vida, en la que por fin realice el sueño de toda una vida y como bien sabes
+      es gracias a ti mi amor. Hize este sitio basándome enteramente en la estética del de Coldplay, aproveche para
+      meter nuevas cosas que he aprendido en animación y programacion estos meses, espero te guste mi reina.
+    </p>
+    <br>
+    <div class="button-container">
+      <button class="play-button play-button-purple" onclick="startApp()">
+        <a href="letter.html">Comenzamos!</a>
+      </button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+  <script src="canvas.js"></script>
+</body>
+
+</html>

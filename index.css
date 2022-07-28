@@ -1,0 +1,177 @@
+body {
+  background-color: #2a2a2a;
+  margin: 0;
+  padding: 0;
+  font-family: "JetBrains Mono", monospace;
+}
+
+/*  Animation Spin START  */
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.canvas1, #canvas2 {
+  background: #25367c; /* initial color */
+  transition: background 0.9s;
+}
+
+#spectrum {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+/*  Animation Spin END  */
+
+/* Responsive (New version) */
+#mask {
+  width: 50vmin;
+}
+#spectrum {
+  width: 49vmin;
+}
+
+/* Images */
+img {
+  position: absolute;
+  top: -300px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: none;
+}
+
+button {
+  background-color: #2a2a2a;
+  text-transform: uppercase;
+  padding: 0.5rem 1.2rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.new-background {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 21%,
+    rgba(37, 54, 124, 1) 100%
+  );
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button span {
+  margin-right: 5px;
+}
+
+.play-button {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+}
+.play-button-purple {
+  border-image-source: linear-gradient(
+    to left,
+    #1dfc2e,
+    #1d72fc,
+    #ece625,
+    #f62b2b,
+    #e440f7
+  );
+}
+
+.play-button-purple a {
+  color: white;
+  text-decoration: none;
+}
+
+.text-container {
+  color: white;
+}
+
+.text-container p {
+  width: 80%;
+  margin: 20px auto;
+  font-size: 13px;
+  padding: 10px;
+  border: 0.1rem solid #7a5ccc;
+  color: #ffa2f3;
+}
+
+.text-container h2 {
+  text-align: center;
+  margin: 50px 0 0 0;
+  font-size: 32px;
+  background: -webkit-linear-gradient(#1d72fc, #e440f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro {
+  color: white;
+  font-size: 13px;
+  margin: 380px 30px 0 30px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.yes-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.image-container {
+  margin: 25px 0;
+}
+
+.image-container img {
+  display: block !important;
+  width: 200px;
+  position: relative !important;
+  top: 0 !important;
+  margin: 0 auto;
+  padding: 8px;
+  border: 1px solid;
+  border-image: linear-gradient(
+      to left,
+      #1dfc2e,
+      #1d72fc,
+      #ece625,
+      #f62b2b,
+      #e440f7
+    )
+    1;
+}
